@@ -362,7 +362,41 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
-
+.map-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.google-map {
+  height: 30rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.contact-paragraph {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--second-color);
+}
+#phone-number {
+  color: var(--second-color);
+}
+#icons {
+  width: 1.875rem;
+  height: 1.875rem;
+  stroke: var(--second-color);
+  padding-right: 0.625rem;
+}
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
