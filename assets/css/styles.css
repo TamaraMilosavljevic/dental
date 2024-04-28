@@ -346,19 +346,27 @@ img {
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
+  grid-auto-rows: 1fr;
 }
-.work__img {
+.quote {
+  width: 2vw;
+}
+.quote img {
+  transition: 1s;
+}
+.quote img:hover {
+  transform: scale(1.1);
+}
+.quote-text {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  font-size: 16px;
+  padding: 5%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
 }
-.work__img img {
-  transition: 1s;
-}
-.work__img img:hover {
-  transform: scale(1.1);
-}
-
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -392,7 +400,9 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: baseline;
+  align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
   padding-bottom: 30px;
 }
 .contact-paragraph {
