@@ -479,7 +479,19 @@ img {
     row-gap: 2rem;
   }
   .home__img {
-    width: 200px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .home__img {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    width: 240px;
+  }
+  .about-section-grid {
+    grid-template-columns: 1fr;
+    padding-left: 10%;
   }
 }
 @media screen and (min-width: 576px) {
